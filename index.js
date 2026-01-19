@@ -13,3 +13,27 @@ cards.forEach(card => {
         targetLinks.forEach(link => link.style.color = "#000000");
     });
 });
+
+const coverPage = document.querySelector('.coverpg');
+const exploreBtn = document.querySelector('.container1 a');
+const nextSection = document.querySelector('.whatwedo');
+
+window.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY;
+    const windowHeight = window.innerHeight;
+    
+    const opacityVal = 1 - (scrollPos / (windowHeight * 0.9));
+    const blurVal = (scrollPos / windowHeight) * 20;
+
+    if (opacityVal > 0) {
+        coverPage.style.opacity = opacityVal;
+        coverPage.style.filter = `blur(${blurVal}px)`;
+    } else {
+        coverPage.style.opacity = 0;
+    }
+});
+
+exploreBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    nextSection.scrollIntoView({ behavior: 'smooth' });
+});

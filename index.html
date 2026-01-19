@@ -4,61 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>Marketing Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="main">
-    <header>
-        
-        <nav class="navbar">         
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-      </nav>
-    </header>
-    <div class="coverpg"></div>
-          <div class="container1">
-            <h1>Crafting the Best Marketing Experience </h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit atque vel voluptatum.</p>
-            <a href="#">Explore Now</a> 
-          </div > 
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="coverpg">
+            <div class="container1">
+                <h1>Crafting the Best Marketing Experience</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit atque vel voluptatum.</p>
+                <a href="#">Explore Now</a>
+            </div>
+        </div>
+
         <div class="whatwedo">
             <div class="blob blob1"></div>
             <div class="blob blob2"></div>
             <div class="blob blob3"></div>
-             <h2 class="serhead"><strong>What We do</strong><br></h2>
-             <h2 class="serpara">We are a group of dedicated professionals with exceptional expertise in delivering a wide range of high-quality services. With years of experience and a strong commitment to excellence, we take pride in providing reliable, efficient, and customized solutions tailored to meet the specific needs of our clients.</h2>
-           
-             <div class="cards">  
+            
+            <h2 class="serhead"><strong>What We Do</strong></h2>
+            <p class="serpara">We are a group of dedicated professionals with exceptional expertise in delivering a wide range of high-quality services. With years of experience and a strong commitment to excellence.</p>
+            
+            <div class="cards">
                 <div class="card1">
                     <h1>Marketing</h1>
                     <p>We craft data-driven marketing strategies that boost brand visibility, engage your audience, and drive measurable growth across digital platforms.</p>
                 </div>
                 <div class="card2">
                     <h1>Creatives</h1>
-                    <p>Our creative team brings ideas to life with captivating visuals, compelling storytelling, and innovative content that resonates with your brand identity.</p>  
+                    <p>Our creative team brings ideas to life with captivating visuals, compelling storytelling, and innovative content that resonates with your brand identity.</p>
                 </div>
                 <div class="card3">
                     <h1>Designing</h1>
                     <p>From UI/UX to graphic design, we design intuitive and eye-catching solutions that enhance user experience and elevate your visual presence.</p>
                 </div>
             </div>
-        </div> 
+        </div>
+
         <div class="page2">
             <div class="video-container">
-                <video autoplay loop muted src="Assets/Block.mp4"></video>
+                <video autoplay loop muted playsinline>
+                    <source src="Assets/Block.mp4" type="video/mp4">
+                </video>
+                <h1>
+                    Ads<br>Marketing<br>Branding
+                    <p>We Cover Everything.</p>
+                </h1>
             </div>
-            <h1>
-                Ads<br>Marketing<br>Branding<br><p>We Cover Everything.</p>
-            </h1>
-        </div> 
-        <div class="page3">
-
         </div>
-        <script src="index.js"></script>
+
+        <div class="page3">
+            <div class="testimonial-header">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by creative directors and brands worldwide.</p>
+            </div>
+        
+            <div class="testimonial-grid">
+                <div class="test-card">
+                    <div class="quote-icon">“</div>
+                    <p>The team transformed our digital presence completely. The visuals for our latest campaign were stunning and drove record engagement.</p>
+                    <div class="client-info">
+                        <h3>Pratima Singh</h3>
+                        <span>Creative Lead, Studio X</span>
+                    </div>
+                </div>
+        
+                <div class="test-card">
+                    <div class="quote-icon">“</div>
+                    <p>Exceptional attention to detail. They handled our movie promotion with such professionalism that we sold out the premiere in hours.</p>
+                    <div class="client-info">
+                        <h3>Vedant Singh</h3>
+                        <span>Director, Indie Films</span>
+                    </div>
+                </div>
+        
+                <div class="test-card">
+                    <div class="quote-icon">“</div>
+                    <p>From the initial concept to the final UI design, the process was seamless. Highly recommended for anyone looking for premium branding.</p>
+                    <div class="client-info">
+                        <h3>Alex Morgan</h3>
+                        <span>CEO, TechFlow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
